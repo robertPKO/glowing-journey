@@ -6,10 +6,10 @@ import React, { useRef } from "react";
 import { useGLTF, PerspectiveCamera } from "@react-three/drei";
 
 export function Model(props) {
-  const { scene } = useGLTF("/landscape.glb", "/draco-gltf");
+  const { scene } = useGLTF("/Pakko_Model.glb", "/draco-gltf");
   return (
     <primitive object={scene} {...props}>
-      <PerspectiveCamera position={[0, 200, 700]} fov={60} makeDefault />
+      <PerspectiveCamera position={[0, 0, 0]} fov={60} makeDefault />
     </primitive>
   );
 }
