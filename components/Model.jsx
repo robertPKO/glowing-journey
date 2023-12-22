@@ -12,6 +12,7 @@ import {
 } from "@react-three/drei";
 
 export function Model(props) {
+  useGLTF.setDecoderPath("@/components/DracoLoader");
   const { scene } = useGLTF("/landscape.glb");
   return (
     <primitive object={scene} {...props}>
