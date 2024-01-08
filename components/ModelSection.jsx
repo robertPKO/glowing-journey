@@ -12,7 +12,6 @@ export default function ModelSection() {
         <Suspense>
           <Model />
         </Suspense>
-        <Preload all />
       </Canvas>
     </div>
   );
